@@ -41,6 +41,10 @@ function clear() {
 	svg.selectAll(".axis")
 		.style("opacity", 0)
 		.remove();
+
+	svg.selectAll(".axisRed")
+		.style("opacity", 0)
+		.remove();
 	
 	svg.selectAll("g")
 		.transition()
@@ -268,8 +272,7 @@ function analyze(data, stepData){
 				.call(d3.axisLeft(yLeft));
 			  
 			svg.append("g")
-				.attr("class", "axis")
-				.style("stroke", "red")
+				.attr("class", "axisRed")
 				.attr("transform", "translate(" + width + ",0)")
 				.call(d3.axisRight(yRight));
 			
