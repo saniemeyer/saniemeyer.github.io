@@ -161,3 +161,15 @@ html, body {
   opacity:0;
   transition: 1s all ease-out;
 }
+
+.axisRed line{
+  stroke: red;
+}
+
+.axisRed path{
+  stroke: red;
+}
+
+.axisRed text{
+  fill: red;
+}
