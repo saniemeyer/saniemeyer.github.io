@@ -269,6 +269,7 @@ function analyze(data, stepData){
 			  
 			svg.append("g")
 				.attr("class", "axis")
+				.style("stroke", "red")
 				.attr("transform", "translate(" + width + ",0)")
 				.call(d3.axisRight(yRight));
 			
